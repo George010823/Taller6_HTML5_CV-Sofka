@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>CV Jorge Gomez</title>
 </head>
-<body style="font-family: 'Montserrat', sans-serif; display:flex; flex-direction:column; min-height:100vh;">
-  
-  <header style="background: linear-gradient(to right, #21436b, #ffffff); height: 48vh; padding: 20px 0;">
-      <div style="width: 95%; position: relative; margin: 0 auto;">
-          <img src="imagenes/JIGR.jpg" alt="Foto_Personal" style="border-radius: 50%;">
-          <nav style="position: absolute; top: 180px; right: 0;">
+
+<body class="contenedor">  
+  <header>
+      <div class="div-nav">
+          <img src="imagenes/JIGR.jpg" alt="Foto_Personal">
+          <nav class="nav" >
               <ul>
-                  <li style="display: inline; margin: 0 0 0 15px;">
-                    <a href="HojaVida.html" style=" text-transform: uppercase; color: #000000; font-weight: bold; font-size: 18px; 
-                    text-decoration: none;" onmouseover="this.style.textDecoration='underline';" 
-                    onmouseout="this.style.textDecoration='none';">Personal information</a>
+                  <li>
+                    <a href="HojaVida.html">Personal inf</a>
                   </li>
-                  <li style="display: inline; margin: 0 0 0 15px;">
-                    <a href="WorkExperiences.html" style=" text-transform: uppercase; color: #000000; font-weight: bold; font-size: 18px; 
-                    text-decoration: none;" onmouseover="this.style.textDecoration='underline';" 
-                    onmouseout="this.style.textDecoration='none';">Work experience</a>
+                  <li>
+                    <a href="WorkExperiences.html">Work exp</a>
                   </li>
-                  <li style="display: inline; margin: 0 0 0 15px;">
-                    <a href="PersonalReferences.html" style=" text-transform: uppercase; color: #000000; font-weight: bold; font-size: 18px; 
-                    text-decoration: none;" onmouseover="this.style.textDecoration='underline';" 
-                    onmouseout="this.style.textDecoration='none';">Personal references</a>
+                  <li>
+                    <a href="PersonalReferences.html">Personal ref</a>
                   </li>
-                  <li style="display: inline; margin: 0 0 0 15px;">
-                    <a href="FamilyReferences.html" style=" text-transform: uppercase; color: #000000; font-weight: bold; font-size: 18px; 
-                    text-decoration: none;" onmouseover="this.style.textDecoration='underline';" 
-                    onmouseout="this.style.textDecoration='none';">Family references</a>
+                  <li>
+                    <a href="FamilyReferences.html">Family ref</a>
                   </li>
-                  <li style="display: inline; margin: 0 0 0 15px;">
-                    <a href="Education.html" style=" text-transform: uppercase; color: #000000; font-weight: bold; font-size: 18px; 
-                    text-decoration: none;" onmouseover="this.style.textDecoration='underline';" 
-                    onmouseout="this.style.textDecoration='none';">Education</a>
+                  <li>
+                    <a href="Education.html">Education</a>
                   </li>
               </ul>
           </nav>
       </div>
   </header>
 
-  <main style="flex:1;">
-    <div style="float:left; width:60%; padding-left: 60px;">
+  <div class="super-div">
+    <main>
+    <div class="div-main1">
       <section>
         <article>
             <h2>PERSONAL REFERENCES.</h2>
@@ -70,9 +64,9 @@
         </article>
       </section>
     </div>
-    <div style="float:right; width:30%; padding-right: 40px;">
+    <div>
       <aside>
-        <div>
+        <div class="div-main2">
           <h2>PERSONAL INFORMATION.</h2>
           <ul>
             <li>Name: Jorge Ivan Gomez Restrepo</li>
@@ -86,11 +80,10 @@
         <br>
       </aside>
     </div>
-  </main>
-
-  <footer style="background: #BBBBBB; padding: 5px 0; background: linear-gradient(to right, #21436b, #ffffff); height: 8vh; 
-    margin-top:auto;">
-    <p style="font-weight: bold; font-size: 18px; text-align: center;">&copy Copyright Jorge Gomez - 2023</p>
+    </main>
+  </div>
+  <footer>
+    <p>&copy Copyright Jorge Gomez - 2023</p>
   </footer>
 </body>
 </html>
