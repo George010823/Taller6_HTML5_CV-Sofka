@@ -30,6 +30,10 @@
                   </li>
               </ul>
           </nav>
+          <div class="div-main3">         
+            <label for="color-picker">Selecciona un color:</label>
+            <input type="color" id="color-picker" name="color-picker">
+          </div>
       </div>
   </header>
 
@@ -40,28 +44,44 @@
         <article>
             <h2>WORK EXPERIENCES.</h2>
             <div>
-              <h3><b>Data architect, Tuya S.A.(Colombia) |</b> <i> 2021 – May 2022</i></h3>
-                <ul>
-                  <li>
-                    <p>
-                        I am responsible for making data available to create the company's campaigns in batch and real-time mode using 
-                        the SAS, HVR, Kafka and Intelligent decisioning suite, creating programs in Python, bash and SQL Analysis and 
-                        decision making of the best option and optimization of company data.
-                    </p>
-                  </li>
-                </ul>
-                <h3><b>Tech leader, Tuya S.A.(Colombia) |</b> <i> Apr 2017 – Sep 2021</i></h3>
-                <ul>
-                  <li>
-                    <p>
-                      Accompany the software life cycle and synchronize the cell members in different projects (requirements analysis and survey, 
-                      architecture, development, Testing and DevOps) with the aim of guaranteeing the delivery of products that generate value for the client 
-                      with defined quality and safety standards.
-                    </p>
-                  </li>
-                </ul>
-                <h3><b>Quality analyst, Choucair Testing (Colombia) |</b> <i>  Mar 2016- Apr 2017</i></h3>
-                <ul>
+                <div class="accordion">
+                  <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h3><b>Data architect, Tuya S.A.(Colombia) |</b> <i> 2021 – May 2022</i></h3>
+                  </div>
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <p>
+                            I am responsible for making data available to create the company's campaigns in batch and real-time mode using 
+                            the SAS, HVR, Kafka and Intelligent decisioning suite, creating programs in Python, bash and SQL Analysis and 
+                            decision making of the best option and optimization of company data.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h3><b>Tech leader, Tuya S.A.(Colombia) |</b> <i> Apr 2017 – Sep 2021</i></h3>
+                  </div>
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <p>
+                          Accompany the software life cycle and synchronize the cell members in different projects (requirements analysis and survey, 
+                          architecture, development, Testing and DevOps) with the aim of guaranteeing the delivery of products that generate value for the client 
+                          with defined quality and safety standards.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h3><b>Quality analyst, Choucair Testing (Colombia) |</b> <i>  Mar 2016- Apr 2017</i></h3>
+                  </div>
+                <div class="accordion-body">
+                  <ul>
                   <li>
                     <p>
                       Execution of functional tests on the AS400 core for Bancolombia payments and collections, creation of test plan, 
@@ -70,16 +90,24 @@
                       executed and results logged in ALM, migration test execution.
                     </p>
                   </li>
-                </ul>
-                <h3><b>Junior Full Stack Developer VB.Net, Samtel S.A.(Colombia) |</b> <i> Nov 2013 – Dec 2015</i></h3>
-                <ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <h3><b>Junior Full Stack Developer VB.Net, Samtel S.A.(Colombia) |</b> <i> Nov 2013 – Dec 2015</i></h3>
+                </div>
+                <div class="accordion-body">
+                  <ul>
                   <li>
                     <p>
                       Gathering of requirements, development and design of web sites on .Net and ASPX .Net technologies, maintenance, 
                       optimization and updating of software and T-SQL stored procedures.
                     </p>
                   </li>
-                </ul>
+                  </ul>
+                </div>
+              </div>
             </div>
         </article>
       </section>
@@ -105,5 +133,7 @@
   <footer>
     <p>&copy Copyright Jorge Gomez - 2023</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -83,6 +83,13 @@ main{
     padding-right: 40px;
 }
 
+.div-main3{
+    float:right; 
+    width:30%; 
+    margin-left: -20px;
+    text-align: right;
+}
+
 p{
     text-align: justify;
 }
@@ -131,11 +138,28 @@ footer p{
     text-align: center;
 }
 
-@keyframes girar {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(3deg);
-    }
-  }
+/*ESTILOS PARA ACORDION SOLICITADO EN EL TALLER DE JAVASCRIPT*/
+
+.accordion {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	box-shadow: 0px 3px 3px #090909;
+}
+
+.accordion-header {
+	background-color: #f5f5f5;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.accordion-body {
+	padding: 10px;
+	display: none;
+	background-color: #fff;
+}
+
+.accordion-body.show {
+	display: block;
+}
